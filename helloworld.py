@@ -1,13 +1,16 @@
-def number1(small,big):
-	for i in range(small, big):
-		print "player %d"%i
-
-def number2(small,big):
-	for i in range(small,big):
-		print "player %d"%i
+#python -i "$(FULL_CURRENT_PATH)"
 	
-j=7
-if j < 6:
-		number1(0,6)
-else:
-	number2(6,11)
+def random(yes ,no):
+	import random
+	i = random.randint(yes,no)  
+	return i
+	
+
+i = random(1,2)
+
+for j in range(1, 11):
+	
+	if i == 1:
+		print "player %d scored"%j
+	else: 
+		print"player %d missed "%j	
